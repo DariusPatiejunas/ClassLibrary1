@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31727.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Automatinis testavimas", "Automatinis testavimas", "{EC8CF224-67CD-4938-8D1C-F7AD5E21A4BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary4", "ClassLibrary4\ClassLibrary4.csproj", "{D89378EC-2B10-4077-8A9F-AEF3EC3576B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Page", "Page", "{C322C8AD-F0D7-4FDA-A645-8217B271DDDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D89378EC-2B10-4077-8A9F-AEF3EC3576B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D89378EC-2B10-4077-8A9F-AEF3EC3576B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D89378EC-2B10-4077-8A9F-AEF3EC3576B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D89378EC-2B10-4077-8A9F-AEF3EC3576B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D89378EC-2B10-4077-8A9F-AEF3EC3576B7} = {EC8CF224-67CD-4938-8D1C-F7AD5E21A4BC}
+		{C322C8AD-F0D7-4FDA-A645-8217B271DDDB} = {EC8CF224-67CD-4938-8D1C-F7AD5E21A4BC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {73133823-1887-4DE6-9DB1-E47C3165686F}
+	EndGlobalSection
+EndGlobal
