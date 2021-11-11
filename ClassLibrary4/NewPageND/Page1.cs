@@ -47,18 +47,9 @@ namespace ClassLibrary4.NewPageND
             private IWebElement _button6 => _driver.FindElement(By.CssSelector(".checkbox:nth-child(6) .cb1-element"));
             private IWebElement _text => _driver.FindElement(By.Id("displayvalue"));
         }
-        public void TestMultipleCheckbox()
-        {
-            IWebElement firstCheckbox = _driver.FindElement(By.Id("isAgeSelected"));
-            if (firstCheckbox.Selected)
-                firstCheckbox.Click();
-            IReadOnlyCollection<IWebElement> multipleCheckboxList = _driver.FindElements(By.CssSelector(".cb1-element"));
-            foreach (IWebElement element in multipleCheckboxList)
-            {
-                element.Click();
-            }
         
-        }
-
+                 
+        
+        
     }
 }
