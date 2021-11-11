@@ -23,7 +23,7 @@ namespace ClassLibrary4
             _driver.Navigate().GoToUrl("http://vartutechnika.lt/");
             WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10));
             _driver.Manage().Window.Maximize();
-            _driver.FindElement(By.Id("cokiescript_reject")).Click();
+            _driver.FindElement(By.Id("cookiescript_reject")).Click();
         }
         [OneTimeTearDown]
         public static void TearDown()
@@ -32,12 +32,15 @@ namespace ClassLibrary4
         }
 
         [TestCase("2000", "2000", true, false, "665.98", TestName = "2000 x 2000 + vartu automatika = 665.98")]
+        [TestCase("4000", "2000", true, true, "1006.43", TestName = "4000 x 2000 + vartu automatika + vartu montavimo darbai = 1006.43")]
+        [TestCase("4000", "2000", false, false, "692.35", TestName = "4000 x 2000 + vartu automatika = 692,35")]
+        [TestCase("5000", "2000", false, true, "989.21", TestName = "5000 x 2000 + vartu automatika = 989.21")]
         public static void TestVartuTechnikaPage(string plotis, string aukstis, bool automatika, bool montavimoDarbai, string result)
         {
-            IWebElement plotisInput = _driver.FindElement(By.Id("doors_plotis"));
+            IWebElement plotisInput = _driver.FindElement(By.Id("doors_width"));
             plotisInput.Clear();
             plotisInput.SendKeys(plotis);
-            IWebElement aukstisInput = _driver.FindElement(By.Id("doors_aukstis"));
+            IWebElement aukstisInput = _driver.FindElement(By.Id("doors_height"));
             aukstisInput.Clear();
             aukstisInput.SendKeys(aukstis);
             IWebElement montavimoCheckbox = _driver.FindElement(By.Id("automatika"));
@@ -50,6 +53,13 @@ namespace ClassLibrary4
                 if (montavimoDarbai != montavimoCheckbox.Selected)
                     montavimoCheckbox.Click();
             }
+         
+          // _driver.FindElement(By.Id("calc_submit")).Click();
+          //  WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10));
+          //  wait.Until(d => d.FindElement(By.CssSelector("#calc_result >div")).Displayed);
+          //  IWebElement resultBox = _driver.FindElement(By.CssSelector("#calc_result >div"));
+         //   Assert.IsTrue(resultBox.Text.Contains(result), $"Result is not the same, expected {result},but was {resultBox.Text}");
+
 
         }
 

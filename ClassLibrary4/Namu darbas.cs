@@ -16,7 +16,7 @@ namespace ClassLibrary4
     {
 
         private static IWebDriver _driver;
-        private static object popUp;
+        
        
 
         [OneTimeSetUp]
@@ -33,15 +33,15 @@ namespace ClassLibrary4
         }
        
         [TestCase("2","2","4",TestName = "2 plius 2 = 4")]
-        [TestCase("-5","3","-2",TestName = "-5 plius 3 =-2")]
-        [TestCase("a","b","NaN",TestName = "a plius b =NaN")]
+        [TestCase("-5","3","-2",TestName = "-5 plius 3 = -2")]
+        [TestCase("a","b","NaN",TestName = "a plius b = NaN")]
 
         public static void TestSuma(string pirmasName, string antrasName, string atsakymas)
         {
             
             _driver.Url = "https://demo.seleniumeasy.com/basic-first-form-demo.html";
             Thread.Sleep(5000);
-            IWebElement popUp = _driver.FindElement(By.Id("at-cv-lightbox-close"));           
+            IWebElement popUp = _driver.FindElement(By.Id("at-cv-lightbox-close"));
             popUp.Click();            
             IWebElement pirmasInput = _driver.FindElement(By.Id("sum1"));
             IWebElement antrasInput = _driver.FindElement(By.Id("sum2"));
@@ -54,7 +54,7 @@ namespace ClassLibrary4
             IWebElement atsakymasFromPage = _driver.FindElement(By.Id("displayvalue"));
             Assert.AreEqual(atsakymas,atsakymasFromPage.Text, " result is NOK ");
 
-           // _driver.Quit();
+           //_driver.Quit();
 
 
 

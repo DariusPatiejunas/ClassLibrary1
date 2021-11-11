@@ -7,8 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Automatinis testavimas", "A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary4", "ClassLibrary4\ClassLibrary4.csproj", "{D89378EC-2B10-4077-8A9F-AEF3EC3576B7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Page", "Page", "{C322C8AD-F0D7-4FDA-A645-8217B271DDDB}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,7 +23,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D89378EC-2B10-4077-8A9F-AEF3EC3576B7} = {EC8CF224-67CD-4938-8D1C-F7AD5E21A4BC}
-		{C322C8AD-F0D7-4FDA-A645-8217B271DDDB} = {EC8CF224-67CD-4938-8D1C-F7AD5E21A4BC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {73133823-1887-4DE6-9DB1-E47C3165686F}

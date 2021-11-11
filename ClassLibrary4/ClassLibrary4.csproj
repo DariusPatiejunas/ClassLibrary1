@@ -66,16 +66,25 @@
     <Compile Include="Class2.cs" />
     <Compile Include="Class3.cs" />
     <Compile Include="Class4.cs" />
+    <Compile Include="Class5.cs" />
     <Compile Include="Class6.cs" />
     <Compile Include="Class7.cs" />
     <Compile Include="Namu darbas.cs" />
+    <Compile Include="Page\SeleniumEasyPage.cs" />
+    <Compile Include="Page\SeleniumInputPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Selenium.cs" />
     <Compile Include="Testnr1.cs" />
+    <Compile Include="Test\SeleniumEasyTest.cs" />
+    <Compile Include="Test\SeleniumInputTest.cs" />
     <Compile Include="Vartutechnika.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PageND\" />
+    <Folder Include="TestND\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
