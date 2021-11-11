@@ -34,7 +34,7 @@ namespace ClassLibrary4.Test
 
 		public void TestSeleniumIputFirsBlock()
 		{
-			SeleniumInputPage page = new SeleniumInputPage(_driver);
+            SeleniumEasyPage page = new SeleniumEasyPage(_driver);
 			string myText = "Labas";
 
 			page.InsertText(myText);
@@ -47,7 +47,7 @@ namespace ClassLibrary4.Test
 		[TestCase("a", "b", "NaN", TestName = "a plius b = NaN")]
 		public void TestSeleniumInputSecondBlock(string firstInput, string secondInput, string result)
 		{
-			SeleniumInputPage page = new SeleniumInputPage(_driver);
+			SeleniumEasyPage page = new SeleniumEasyPage(_driver);
 			page.InsertBothsInput(firstInput, secondInput);
 			page.ClickGetTotalButton();
 			page.CheckSumResult(result);
