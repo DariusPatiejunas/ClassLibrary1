@@ -18,6 +18,9 @@ namespace ClassLibrary4.NewPageND
         private IWebDriver _webdriver;
         private object _FirstInput;
         private object __driver;
+        private object _resultFromPage;
+        private object text;
+
         public class Test2Test
         {
             private IWebDriver driver;
@@ -42,6 +45,12 @@ namespace ClassLibrary4.NewPageND
             private IWebElement _button1 => _driver.FindElement(By.CssSelector(".checkbox:nth-child(4) .cb1-element"));
             private IWebElement _button2 => _driver.FindElement(By.CssSelector(".checkbox:nth-child(5) .cb1-element"));
             private IWebElement _button3 => _driver.FindElement(By.CssSelector(".checkbox:nth-child(6) .cb1-element"));
+            private IWebElement _text => _driver.FindElement(By.Id("displayvalue"));
         }
+        public void TestMultipleCheckbox()
+        {
+            Assert.IsTrue(text.Equals("Success - Check box is checked"));
+        }
+
     }
 }
