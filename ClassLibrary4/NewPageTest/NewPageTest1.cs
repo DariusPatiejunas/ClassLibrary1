@@ -23,7 +23,7 @@ namespace ClassLibrary4.NewPageTest
 			_driver = new ChromeDriver();
 			_driver.Url = "https://demo.seleniumeasy.com/basic-first-form-demo.html";
 			WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10));
-			IWebElement popUp = _driver.FindElement(By.Id("at-cv-lightbox-close"));
+			IWebElement popUp = _driver.FindElement(By.Id("isAgeSelected"));
 			wait.Until(d => popUp.Displayed);
 			popUp.Click();
 		}
