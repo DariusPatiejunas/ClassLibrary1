@@ -78,10 +78,7 @@
     <Compile Include="Selenium.cs" />
     <Compile Include="Testnr1.cs" />
     <Compile Include="Test\SeleniumInputTest.cs" />
-    <Compile Include="text\Equals.cs" />
     <Compile Include="Vartutechnika.cs" />
-    <Compile Include="_driver\FindElement.cs" />
-    <Compile Include="_driver\Manage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
