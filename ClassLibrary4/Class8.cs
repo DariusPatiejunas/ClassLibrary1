@@ -26,7 +26,7 @@ public class Class8
     [TearDown]
     protected void TearDown()
     {
-        driver.Quit();
+        //driver.Quit();
     }
     [Test]
     public void testas1()
