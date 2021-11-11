@@ -49,7 +49,15 @@ namespace ClassLibrary4.NewPageND
         }
         public void TestMultipleCheckbox()
         {
-            Assert.IsTrue(text.Equals("Success - Check box is checked"));
+            IWebElement firstCheckbox = _driver.FindElement(By.Id("isAgeSelected"));
+            if (firstCheckbox.Selected)
+                firstCheckbox.Click();
+            IReadOnlyCollection<IWebElement> multipleCheckboxList = _driver.FindElements(By.CssSelector(".cb1-element"));
+            foreach (IWebElement element in multipleCheckboxList)
+            {
+                element.Click();
+            }
+        
         }
 
     }
