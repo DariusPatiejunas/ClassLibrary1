@@ -33,13 +33,13 @@ namespace ClassLibrary4.NewPageTest
 			// _driver.Quit();
 		}
 		[Test]
-		public void PirmasTestas()
+		public void  Checkbox()
 		{
             _driver.Navigate().GoToUrl("https://demo.seleniumeasy.com/basic-checkbox-demo.html");
 			_driver.Manage().Window.Size = new System.Drawing.Size(1050, 708);
 			_driver.FindElement(By.Id("isAgeSelected")).Click();
 		}
-		public void AntrasTestas()
+		public void TestMultipleCheckbox()
         {
 			_driver.Navigate().GoToUrl("https://demo.seleniumeasy.com/basic-checkbox-demo.html");
 			_driver.Manage().Window.Size = new System.Drawing.Size(1050, 708);
