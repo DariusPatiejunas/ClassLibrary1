@@ -46,6 +46,7 @@ namespace ClassLibrary4.NewPageND
             private IWebElement _button5 => _driver.FindElement(By.CssSelector(".checkbox:nth-child(5) .cb1-element"));
             private IWebElement _button6 => _driver.FindElement(By.CssSelector(".checkbox:nth-child(6) .cb1-element"));
             private IWebElement _text => _driver.FindElement(By.Id("displayvalue"));
+            private IWebElement _resultUncheckAll => _driver.FindElement(By.Id("check1"));
         }
         
                  

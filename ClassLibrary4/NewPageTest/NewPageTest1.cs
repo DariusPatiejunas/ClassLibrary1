@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿// 2021-11-11, Darius Patiejunas ND3
+using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
@@ -49,7 +50,18 @@ namespace ClassLibrary4.NewPageTest
 			_driver.FindElement(By.CssSelector(".checkbox:nth-child(5) .cb1-element")).Click();
 			_driver.FindElement(By.CssSelector(".checkbox:nth-child(6) .cb1-element")).Click();
 		}
+		[Test]
+		public void TestUncheckAll()
+		{
+			_driver.Navigate().GoToUrl("https://demo.seleniumeasy.com/basic-checkbox-demo.html");
+			_driver.Manage().Window.Size = new System.Drawing.Size(1050, 708);
+			_driver.FindElement(By.Id("check1")).Click();
+			_driver.FindElement(By.Id("check1")).Click();
+			_driver.FindElement(By.Id("check1")).Click();
+			_driver.FindElement(By.Id("check1")).Click();
+		}
 	}
 }
+
 
 	
