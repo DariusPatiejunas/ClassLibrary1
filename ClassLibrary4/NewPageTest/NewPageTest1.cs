@@ -39,6 +39,7 @@ namespace ClassLibrary4.NewPageTest
 			_driver.Manage().Window.Size = new System.Drawing.Size(1050, 708);
 			_driver.FindElement(By.Id("isAgeSelected")).Click();
 		}
+		[Test]
 		public void TestMultipleCheckbox()
         {
 			_driver.Navigate().GoToUrl("https://demo.seleniumeasy.com/basic-checkbox-demo.html");
