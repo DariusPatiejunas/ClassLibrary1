@@ -33,11 +33,20 @@ namespace ClassLibrary4.NewPageTest
 			// _driver.Quit();
 		}
 		[Test]
-		public void tS1()
+		public void PirmasTestas()
 		{
             _driver.Navigate().GoToUrl("https://demo.seleniumeasy.com/basic-checkbox-demo.html");
 			_driver.Manage().Window.Size = new System.Drawing.Size(1050, 708);
 			_driver.FindElement(By.Id("isAgeSelected")).Click();
+		}
+		public void AntrasTestas()
+        {
+			_driver.Navigate().GoToUrl("https://demo.seleniumeasy.com/basic-checkbox-demo.html");
+			_driver.Manage().Window.Size = new System.Drawing.Size(1050, 708);
+			_driver.FindElement(By.CssSelector(".checkbox:nth-child(3) .cb1-element")).Click();
+			_driver.FindElement(By.CssSelector(".checkbox:nth-child(4) .cb1-element")).Click();
+			_driver.FindElement(By.CssSelector(".checkbox:nth-child(5) .cb1-element")).Click();
+			_driver.FindElement(By.CssSelector(".checkbox:nth-child(6) .cb1-element")).Click();
 		}
 	}
 }
