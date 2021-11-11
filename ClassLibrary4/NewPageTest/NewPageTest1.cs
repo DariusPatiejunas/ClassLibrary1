@@ -21,7 +21,7 @@ namespace ClassLibrary4.NewPageTest
 		public static void SetUp()
 		{
 			_driver = new ChromeDriver();
-			_driver.Url = "https://demo.seleniumeasy.com/basic-first-form-demo.html";
+			_driver.Url = "https://demo.seleniumeasy.com/basic-checkbox-demo.html";
 			WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10));
 			IWebElement popUp = _driver.FindElement(By.Id("isAgeSelected"));
 			wait.Until(d => popUp.Displayed);
