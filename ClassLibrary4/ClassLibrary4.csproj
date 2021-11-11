@@ -70,6 +70,7 @@
     <Compile Include="Class5.cs" />
     <Compile Include="Class6.cs" />
     <Compile Include="Class7.cs" />
+    <Compile Include="Class8.cs" />
     <Compile Include="Namu darbas.cs" />
     <Compile Include="NewPageND\Page1.cs" />
     <Compile Include="NewPageTest\NewPageTest1.cs" />
