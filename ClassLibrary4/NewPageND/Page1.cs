@@ -41,10 +41,10 @@ namespace ClassLibrary4.NewPageND
             private IWebElement _inputField => _driver.FindElement(By.Id("isAgeSelected"));
             private IWebElement Button => _driver.FindElement(By.CssSelector("txtAge"));
             private IWebElement _result => _driver.FindElement(By.Id("display"));
-            private IWebElement _button => _driver.FindElement(By.CssSelector(".checkbox:nth-child(3) .cb1-element"));
-            private IWebElement _button1 => _driver.FindElement(By.CssSelector(".checkbox:nth-child(4) .cb1-element"));
-            private IWebElement _button2 => _driver.FindElement(By.CssSelector(".checkbox:nth-child(5) .cb1-element"));
-            private IWebElement _button3 => _driver.FindElement(By.CssSelector(".checkbox:nth-child(6) .cb1-element"));
+            private IWebElement _butto3 => _driver.FindElement(By.CssSelector(".checkbox:nth-child(3) .cb1-element"));
+            private IWebElement _button4 => _driver.FindElement(By.CssSelector(".checkbox:nth-child(4) .cb1-element"));
+            private IWebElement _button5 => _driver.FindElement(By.CssSelector(".checkbox:nth-child(5) .cb1-element"));
+            private IWebElement _button6 => _driver.FindElement(By.CssSelector(".checkbox:nth-child(6) .cb1-element"));
             private IWebElement _text => _driver.FindElement(By.Id("displayvalue"));
         }
         public void TestMultipleCheckbox()
