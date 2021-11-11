@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace ClassLibrary4.Page
 {
 
-	public class SeleniumEasyPage
+	public class SeleniumInputPage
 	{
 		private static IWebDriver _driver;
         private double expectedResultSum;
@@ -25,7 +25,7 @@ namespace ClassLibrary4.Page
 		private IWebElement _getTotalButton => _driver.FindElement(By.CssSelector("#gettotal > button"));
 		private IWebElement _resultFromPage => _driver.FindElement(By.Id("displayvalue"));
 
-		public SeleniumEasyPage(IWebDriver webdriver)
+		public SeleniumInputPage(IWebDriver webdriver)
 		{
 			_driver = webdriver;
 		}

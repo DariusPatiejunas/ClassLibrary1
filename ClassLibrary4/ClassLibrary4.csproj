@@ -70,12 +70,10 @@
     <Compile Include="Class6.cs" />
     <Compile Include="Class7.cs" />
     <Compile Include="Namu darbas.cs" />
-    <Compile Include="Page\SeleniumEasyPage.cs" />
     <Compile Include="Page\SeleniumInputPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Selenium.cs" />
     <Compile Include="Testnr1.cs" />
-    <Compile Include="Test\SeleniumEasyTest.cs" />
     <Compile Include="Test\SeleniumInputTest.cs" />
     <Compile Include="Vartutechnika.cs" />
   </ItemGroup>
