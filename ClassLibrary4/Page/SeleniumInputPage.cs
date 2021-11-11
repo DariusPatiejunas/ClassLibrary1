@@ -25,7 +25,7 @@ namespace ClassLibrary4.Page
 		private IWebElement _getTotalButton => _driver.FindElement(By.CssSelector("#gettotal > button"));
 		private IWebElement _resultFromPage => _driver.FindElement(By.Id("displayvalue"));
 
-		public SeleniumInputPage(IWebDriver webdriver)
+		public  SeleniumInputPage(IWebDriver webdriver)
 		{
 			_driver = webdriver;
 		}
