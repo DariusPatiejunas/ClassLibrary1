@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary4", "ClassLibra
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Baigiamasis Darbas", "Baigiamasis Darbas", "{C4A2CEA7-5FAD-4165-9C02-088267A2C489}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary6", "ClassLibrary6\ClassLibrary6.csproj", "{69D2FF5A-3D38-41DA-B5FF-3AC05A6C82F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtsiskaitymoDarbas", "ClassLibrary6\AtsiskaitymoDarbas.csproj", "{69D2FF5A-3D38-41DA-B5FF-3AC05A6C82F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

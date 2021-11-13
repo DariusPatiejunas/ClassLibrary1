@@ -1,4 +1,5 @@
-﻿using jsreport.Types;
+﻿using ClassLibrary6;
+using jsreport.Types;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
@@ -8,7 +9,7 @@ using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassLibrary6
+namespace AtsiskaitymoDarbas
 {
     public class Baigiamasis
     {
