@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Automatinis testavimas", "A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary4", "ClassLibrary4\ClassLibrary4.csproj", "{D89378EC-2B10-4077-8A9F-AEF3EC3576B7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Baigiamasis Darbas", "Baigiamasis Darbas", "{C4A2CEA7-5FAD-4165-9C02-088267A2C489}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary6", "ClassLibrary6\ClassLibrary6.csproj", "{69D2FF5A-3D38-41DA-B5FF-3AC05A6C82F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,18 @@ Global
 		{D89378EC-2B10-4077-8A9F-AEF3EC3576B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D89378EC-2B10-4077-8A9F-AEF3EC3576B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D89378EC-2B10-4077-8A9F-AEF3EC3576B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69D2FF5A-3D38-41DA-B5FF-3AC05A6C82F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69D2FF5A-3D38-41DA-B5FF-3AC05A6C82F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69D2FF5A-3D38-41DA-B5FF-3AC05A6C82F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69D2FF5A-3D38-41DA-B5FF-3AC05A6C82F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D89378EC-2B10-4077-8A9F-AEF3EC3576B7} = {EC8CF224-67CD-4938-8D1C-F7AD5E21A4BC}
+		{C4A2CEA7-5FAD-4165-9C02-088267A2C489} = {EC8CF224-67CD-4938-8D1C-F7AD5E21A4BC}
+		{69D2FF5A-3D38-41DA-B5FF-3AC05A6C82F6} = {C4A2CEA7-5FAD-4165-9C02-088267A2C489}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {73133823-1887-4DE6-9DB1-E47C3165686F}
