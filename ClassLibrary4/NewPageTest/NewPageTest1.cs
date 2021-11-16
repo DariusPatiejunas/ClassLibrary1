@@ -36,14 +36,14 @@ namespace ClassLibrary4.NewPageTest
 		[Test]
 		public void  Checkbox()
 		{
-            _driver.Navigate().GoToUrl("https://demo.seleniumeasy.com/basic-checkbox-demo.html");
+           // _driver.Navigate().GoToUrl("https://demo.seleniumeasy.com/basic-checkbox-demo.html");
 			_driver.Manage().Window.Size = new System.Drawing.Size(1050, 708);
 			_driver.FindElement(By.Id("isAgeSelected")).Click();
 		}
 		[Test]
 		public void TestMultipleCheckbox()
         {
-			_driver.Navigate().GoToUrl("https://demo.seleniumeasy.com/basic-checkbox-demo.html");
+			//_driver.Navigate().GoToUrl("https://demo.seleniumeasy.com/basic-checkbox-demo.html");
 			_driver.Manage().Window.Size = new System.Drawing.Size(1050, 708);
 			_driver.FindElement(By.CssSelector(".checkbox:nth-child(3) .cb1-element")).Click();
 			_driver.FindElement(By.CssSelector(".checkbox:nth-child(4) .cb1-element")).Click();
@@ -53,7 +53,7 @@ namespace ClassLibrary4.NewPageTest
 		[Test]
 		public void TestUncheckAll()
 		{
-			_driver.Navigate().GoToUrl("https://demo.seleniumeasy.com/basic-checkbox-demo.html");
+			//_driver.Navigate().GoToUrl("https://demo.seleniumeasy.com/basic-checkbox-demo.html");
 			_driver.Manage().Window.Size = new System.Drawing.Size(1050, 708);
 			_driver.FindElement(By.Id("check1")).Click();
 			_driver.FindElement(By.Id("check1")).Click();

@@ -77,8 +77,11 @@
     <Compile Include="Class7.cs" />
     <Compile Include="Class8.cs" />
     <Compile Include="Namu darbas.cs" />
+    <Compile Include="NewFolder1Page\TaxPage.cs" />
+    <Compile Include="NewFolder2Test\TaxTest.cs" />
     <Compile Include="NewPageTest\NewPageTest1.cs" />
     <Compile Include="Page\SeleniumInputPage.cs" />
+    <Compile Include="Page\TaxPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Selenium.cs" />
     <Compile Include="Testnr1.cs" />
@@ -88,9 +91,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NewPageND\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
