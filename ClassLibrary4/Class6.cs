@@ -34,7 +34,7 @@ namespace ClassLibrary4
         {
             _driver.Navigate().GoToUrl("https://demo.seleniumeasy.com/basic-checkbox-demo.html");
             _driver.Manage().Window.Size = new System.Drawing.Size(1050, 708);
-            _driver.FindElement(By.Id("check1")).Click();
+            //_driver.FindElement(By.Id("check1")).Click();
             _driver.FindElement(By.Id("check1")).Click();
             //_driver.Quit();
         }

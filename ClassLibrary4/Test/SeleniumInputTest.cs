@@ -46,7 +46,7 @@ namespace ClassLibrary4.Test
 
 		[TestCase("2", "2", "4", TestName = "2 plius 2 = 4")]
 		[TestCase("-5", "3", "-2", TestName = "-5 plius 3 = -2")]
-		[TestCase("a", "b", "NaN", TestName = "a plius b = NaN")]
+		[TestCase("a", "b", "NaN", TestName = "a plius b = NaN")]		
 		public void TestSeleniumInputSecondBlock(string firstInput, string secondInput, string result)
 		{
             Page.SeleniumInputPage page =new SeleniumInputPage(_driver);

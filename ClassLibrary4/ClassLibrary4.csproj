@@ -44,6 +44,7 @@
     <Reference Include="nunit.framework, Version=3.13.2.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
       <HintPath>..\packages\NUnit.3.13.2\lib\net45\nunit.framework.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -62,6 +63,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaigiamasisDarbas\Atsiskaitymas.cs" />
+    <Compile Include="BaigiamasisDarbas\PVMskaiciuokle.cs" />
+    <Compile Include="BaigiamasisDarbas\Registracija.cs" />
+    <Compile Include="BaigiamasisDarbas\Skaiciuokles.cs" />
     <Compile Include="Checkbox.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Class2.cs" />
@@ -72,7 +77,6 @@
     <Compile Include="Class7.cs" />
     <Compile Include="Class8.cs" />
     <Compile Include="Namu darbas.cs" />
-    <Compile Include="NewPageND\Page1.cs" />
     <Compile Include="NewPageTest\NewPageTest1.cs" />
     <Compile Include="Page\SeleniumInputPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,7 +88,9 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="NewPageND\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

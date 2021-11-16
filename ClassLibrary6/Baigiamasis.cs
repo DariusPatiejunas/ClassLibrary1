@@ -1,13 +1,6 @@
 ﻿using ClassLibrary6;
-using jsreport.Types;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AtsiskaitymoDarbas
 {
@@ -17,8 +10,22 @@ namespace AtsiskaitymoDarbas
         public static void TestChromeDriver()
         {
             IWebDriver chrome = new ChromeDriver();
-            chrome.Url = "https://www.tax.lt/";
+            chrome.Url = "https://www.tax.lt";
             chrome.Quit();
+        }
+        [Test]
+        public static void TestTaxPage()
+        {
+            IWebDriver chrome = new ChromeDriver();
+            chrome.Url = "https://www.tax.lt";
+            IWebElement VartotojasInputField = chrome.FindElement(By.Id("user_login"));
+            IWebElement SlaptazodisInputField = chrome.FindElement(By.Id("user_password"));
+            IWebElement Checkbox = chrome.FindElement(By.Id("user_remember_me"));
+
+            VartotojasInputField.SendKeys("Test");
+            SlaptazodisInputField.SendKeys("Test");
+
+            //chrome.Quit();
         }
     }
 }
