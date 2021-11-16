@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using ClassLibrary4.NewFolderPage1;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
@@ -12,6 +13,7 @@ namespace ClassLibrary4.NewFolder2Test
     public class TaxTest
     {
         private static IWebDriver _driver;
+        private string user_password;
 
         [OneTimeSetUp]
         public static void SetUp()
@@ -28,9 +30,17 @@ namespace ClassLibrary4.NewFolder2Test
         }
         [Test]
 
-        public void TestTaxtest()
+        public void TestTaxPage()
         {
-            Page.TaxPage page = new Page.TaxPage(_driver);
+            TaxPage page = new TaxPage(_driver);
+
+            string user_login = ("Test");
+            page.InsertText(user_login);
+            string user_password = ("Test");
+            page.InsertPassword(user_password);
+            
+
+            // page.InsertChecbox(Text);
 
         }
     }

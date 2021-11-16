@@ -20,10 +20,20 @@ namespace ClassLibrary4.NewFolderPage1
         {
             _driver = webdriver;
         }
-        public void InsertText(string text)
+        public void InsertText(string user_login)
         {
-
-
+            _loginInputField.SendKeys(user_login);
         }
+        public void InsertPassword(string user_password )
+        {
+            _passwordInputField.SendKeys(user_password);
+        }
+
+        
+        // public void InsertChecbox(string text)
+        // {
+        //  _Checkbox.SendKeys(text);
+        //  }
+
     }
 }
