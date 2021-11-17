@@ -77,7 +77,9 @@
     <Compile Include="Class7.cs" />
     <Compile Include="Class8.cs" />
     <Compile Include="Namu darbas.cs" />
+    <Compile Include="NewFolder1Page\PVMskaiciuoklePage.cs" />
     <Compile Include="NewFolder1Page\TaxPage.cs" />
+    <Compile Include="NewFolder2Test\PVMskaiciuokleTest.cs" />
     <Compile Include="NewFolder2Test\TaxTest.cs" />
     <Compile Include="NewPageTest\NewPageTest1.cs" />
     <Compile Include="Page\SeleniumInputPage.cs" />

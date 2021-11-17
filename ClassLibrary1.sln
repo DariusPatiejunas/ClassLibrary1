@@ -8,9 +8,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary4", "ClassLibrary4\ClassLibrary4.csproj", "{D89378EC-2B10-4077-8A9F-AEF3EC3576B7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestFolder", "TestFolder", "{F80B9A6D-9E45-4249-B323-3C1DDB07CA47}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\OneDrive\Stalinis kompiuteris\TS1.cs = ..\..\..\OneDrive\Stalinis kompiuteris\TS1.cs
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
