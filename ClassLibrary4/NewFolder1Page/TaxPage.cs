@@ -14,19 +14,19 @@ namespace ClassLibrary4.NewFolderPage1
 
         private IWebElement _loginInputField => _driver.FindElement(By.Id("user_login"));
         private IWebElement _passwordInputField => _driver.FindElement(By.Id("user_password"));
-        private IWebElement _Checkbox => _driver.FindElement(By.Id("user_remember_me"));
+       // private IWebElement _Checkbox => _driver.FindElement(By.Id("user_remember_me"));
 
         public TaxPage(IWebDriver webdriver)
         {
             _driver = webdriver;
         }
-        public void InsertText(string user_login)
+        public void LoginInputField(string text)
         {
-            _loginInputField.SendKeys(user_login);
+            _loginInputField.SendKeys(text);
         }
-        public void InsertPassword(string user_password )
+        public void passwordInputField(string user_password )
         {
-            _passwordInputField.SendKeys(user_password);
+           _passwordInputField.SendKeys(user_password);
         }
 
         

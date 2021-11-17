@@ -18,9 +18,9 @@ namespace ClassLibrary4.NewFolder2Test
         [OneTimeSetUp]
         public static void SetUp()
         {
-            IWebDriver chrome = new ChromeDriver();
-            chrome.Navigate().GoToUrl("https://www.tax.lt/login");
-            IWebElement button = chrome.FindElement(By.ClassName("fc-button-label"));
+            _driver = new ChromeDriver();
+            _driver.Navigate().GoToUrl("https://www.tax.lt/login");
+            IWebElement button = _driver.FindElement(By.ClassName("fc-button-label"));
             button.Click();
         }
         [OneTimeTearDown]
@@ -34,10 +34,9 @@ namespace ClassLibrary4.NewFolder2Test
         {
             TaxPage page = new TaxPage(_driver);
 
-            string user_login = ("Test");
-            page.InsertText(user_login);
-            string user_password = ("Test");
-            page.InsertPassword(user_password);
+            string text = "Test";
+            page.LoginInputField(text);
+            page.passwordInputField(text);
             
 
             // page.InsertChecbox(Text);
