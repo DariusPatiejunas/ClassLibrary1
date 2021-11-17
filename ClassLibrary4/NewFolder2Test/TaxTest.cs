@@ -1,4 +1,5 @@
-﻿using ClassLibrary4.NewFolderPage1;
+﻿// 2021-11-17, Darius Patiejunas, Objekt Page
+using ClassLibrary4.NewFolderPage1;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -37,9 +38,8 @@ namespace ClassLibrary4.NewFolder2Test
             string text = "Test";
             page.LoginInputField(text);
             page.passwordInputField(text);
-            
-
-            // page.InsertChecbox(Text);
+            string check = "check";
+            page.Checbox(check);
 
         }
     }
