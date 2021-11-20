@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary4.NewFolder1Page
 {
-    class PVMskaiciuoklePage
+    public class PVMskaiciuoklePage
     {
         private static IWebDriver _driver;
 

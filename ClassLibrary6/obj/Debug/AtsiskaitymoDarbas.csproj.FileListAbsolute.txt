@@ -1,0 +1,11 @@
+C:\Users\Darius\source\repos\ClassLibrary1\ClassLibrary6\bin\Debug\ClassLibrary6.dll
+C:\Users\Darius\source\repos\ClassLibrary1\ClassLibrary6\bin\Debug\ClassLibrary6.pdb
+C:\Users\Darius\source\repos\ClassLibrary1\ClassLibrary6\bin\Debug\jsreport.Types.dll
+C:\Users\Darius\source\repos\ClassLibrary1\ClassLibrary6\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Darius\source\repos\ClassLibrary1\ClassLibrary6\bin\Debug\WebDriver.dll
+C:\Users\Darius\source\repos\ClassLibrary1\ClassLibrary6\bin\Debug\jsreport.Types.xml
+C:\Users\Darius\source\repos\ClassLibrary1\ClassLibrary6\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Darius\source\repos\ClassLibrary1\ClassLibrary6\obj\Debug\AtsiskaitymoDarbas.csproj.AssemblyReference.cache
+C:\Users\Darius\source\repos\ClassLibrary1\ClassLibrary6\obj\Debug\AtsiskaitymoDarbas.csproj.CoreCompileInputs.cache
+C:\Users\Darius\source\repos\ClassLibrary1\ClassLibrary6\obj\Debug\ClassLibrary6.dll
+C:\Users\Darius\source\repos\ClassLibrary1\ClassLibrary6\obj\Debug\ClassLibrary6.pdb

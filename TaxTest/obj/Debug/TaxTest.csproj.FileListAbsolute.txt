@@ -1,0 +1,12 @@
+C:\Users\Darius\source\repos\ClassLibrary1\TaxTest\bin\Debug\TaxTest.dll
+C:\Users\Darius\source\repos\ClassLibrary1\TaxTest\bin\Debug\TaxTest.pdb
+C:\Users\Darius\source\repos\ClassLibrary1\TaxTest\bin\Debug\ClassVSC.dll
+C:\Users\Darius\source\repos\ClassLibrary1\TaxTest\bin\Debug\nunit.framework.dll
+C:\Users\Darius\source\repos\ClassLibrary1\TaxTest\bin\Debug\WebDriver.dll
+C:\Users\Darius\source\repos\ClassLibrary1\TaxTest\bin\Debug\ClassVSC.pdb
+C:\Users\Darius\source\repos\ClassLibrary1\TaxTest\bin\Debug\nunit.framework.xml
+C:\Users\Darius\source\repos\ClassLibrary1\TaxTest\obj\Debug\TaxTest.csproj.AssemblyReference.cache
+C:\Users\Darius\source\repos\ClassLibrary1\TaxTest\obj\Debug\TaxTest.csproj.CoreCompileInputs.cache
+C:\Users\Darius\source\repos\ClassLibrary1\TaxTest\obj\Debug\TaxTest.csproj.CopyComplete
+C:\Users\Darius\source\repos\ClassLibrary1\TaxTest\obj\Debug\TaxTest.dll
+C:\Users\Darius\source\repos\ClassLibrary1\TaxTest\obj\Debug\TaxTest.pdb

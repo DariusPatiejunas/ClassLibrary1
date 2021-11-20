@@ -35,17 +35,17 @@ namespace ClassLibrary4.BaigiamasisDarbas
         public static void Testpvm_skaiciuokle()
         {
             
-            //IWebElement PvmTarifas21 = _driver.FindElement(By.Id("vat_percent"));
-            IWebElement PvmTarifas9 = _driver.FindElement(By.Id("vat_percent"));
-           // IWebElement PvmTarifas5 = _driver.FindElement(By.Id("vat_percent"));            
-            //_driver.FindElement(By.XPath("//option[. = '21%']")).Click();
-            _driver.FindElement(By.XPath("//option[. = '9%']")).Click();
-           // _driver.FindElement(By.XPath("//option[. = '5%']")).Click();
+           // IWebElement PvmTarifas21 = _driver.FindElement(By.Id("vat_percent"));
+           // IWebElement PvmTarifas9 = _driver.FindElement(By.Id("vat_percent"));
+            IWebElement PvmTarifas5 = _driver.FindElement(By.Id("vat_percent"));            
+           // _driver.FindElement(By.XPath("//option[. = '21%']")).Click();
+           // _driver.FindElement(By.XPath("//option[. = '9%']")).Click();
+            _driver.FindElement(By.XPath("//option[. = '5%']")).Click();
             IWebElement sumabePVM = _driver.FindElement(By.Id("amount_wo_vat"));
             _driver.FindElement(By.Id("amount_wo_vat")).Clear();
             sumabePVM.SendKeys("500");
-            //IWebElement PVMsuma = _driver.FindElement(By.Id("vat_amount"));
-           // IWebElement bendrasuma = _driver.FindElement(By.Id("total_amount"));
+            IWebElement PVMsuma = _driver.FindElement(By.Id("vat_amount"));
+            IWebElement bendrasuma = _driver.FindElement(By.Id("total_amount"));
 
 
 

@@ -21,9 +21,9 @@ namespace AtsiskaitymoDarbas
             chrome.Manage().Window.Maximize();
             IWebElement button = chrome.FindElement(By.ClassName("fc-button-label"));            
             button.Click();
-            // IWebElement popUp = chrome.FindElement(By.Id("i6"));
-            // popUp.Click();
-            //chrome.Quit();
+            IWebElement popUp = chrome.FindElement(By.Id("i6"));
+            popUp.Click();
+            chrome.Quit();
         }
 
 
@@ -40,8 +40,8 @@ namespace AtsiskaitymoDarbas
             IWebElement passwordInputField = chrome.FindElement(By.Id("user_password"));
             passwordInputField.SendKeys("Test");
             IWebElement Checkbox = chrome.FindElement(By.Id("user_remember_me"));
-            //Checkbox.Click();
-            //chrome.Quit();
+           // Checkbox.Click();
+           // chrome.Quit();
         }
         [Test]
         public static void TestPageLoginValidation()

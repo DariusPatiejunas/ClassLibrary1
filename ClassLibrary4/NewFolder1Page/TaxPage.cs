@@ -32,7 +32,7 @@ namespace ClassLibrary4.NewFolderPage1
 
         
          public void Checbox(string uncheck)
-        {
+         {
           _Checkbox.SendKeys(uncheck);
          }
 

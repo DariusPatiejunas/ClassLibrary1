@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary4.NewFolder2Test
 {
-    class PVMskaiciuokleTest
+    public class PVMskaiciuokleTest
     {
         private static IWebDriver _driver;
 
