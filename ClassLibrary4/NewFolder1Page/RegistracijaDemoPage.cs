@@ -10,8 +10,8 @@ namespace ClassLibrary4.NewFolder1Page
 {
      public class RegistracijaDemoPage : BasePage
      {
-        private string email;
-        private string password;
+        public string email;
+        public string password;
 
         private IWebElement _userInput => Driver.FindElement(By.Id("user_login"));
         private IWebElement _emailInput => Driver.FindElement(By.Id("user_email"));
@@ -26,26 +26,26 @@ namespace ClassLibrary4.NewFolder1Page
         {
             Driver.Url = "https://www.tax.lt/signup";
             Driver.FindElement(By.ClassName("fc-button-label")).Click();
-
-        }        
-
-        public RegistracijaDemoPage UserInput(string user)
+            
+        }      
+        public RegistracijaDemoPage UserInput(string user_login)
         {
-            _userInput.Clear();
-            _userInput.SendKeys(user);
-             return this;
+           _userInput.Clear();
+           _userInput.SendKeys(user_login);
+            return this;
 
-        }        
-        public RegistracijaDemoPage EmailInput(string email)
+        }              
+
+        public RegistracijaDemoPage EmailInput(string user_email)
         {
             _emailInput.Clear();
-            _emailInput.SendKeys(email);
+            _emailInput.SendKeys(user_email);
             return this;
         }
-        public RegistracijaDemoPage PasswordInput(string password)
+        public RegistracijaDemoPage PasswordInput(string user_password)
         {
             _passwordInput.Clear();
-            _passwordInput.SendKeys(password);
+            _passwordInput.SendKeys(user_password);
             return this;
         }
     }

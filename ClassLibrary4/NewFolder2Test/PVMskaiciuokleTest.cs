@@ -12,19 +12,19 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary4.NewFolder2Test
 {
-    public class PVMskaiciuokleTest
+    public class PVMskaiciuokleTest : BaseTest
     {
         private static IWebDriver _driver;
 
         [OneTimeSetUp]
         public static void SetUp()
         {
-            _driver = new ChromeDriver();
-            _driver.Navigate().GoToUrl("https://www.tax.lt/skaiciuokles/pvm_skaiciuokle");
-            WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10));
+            driver = new ChromeDriver();
+            driver.Navigate().GoToUrl("https://www.tax.lt/skaiciuokles/pvm_skaiciuokle");
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             // _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            _driver.FindElement(By.ClassName("fc-button-label")).Click();
-            _driver.Manage().Window.Maximize();
+            driver.FindElement(By.ClassName("fc-button-label")).Click();
+            driver.Manage().Window.Maximize();
         }
         [OneTimeTearDown]
         public static void TearDown()
@@ -35,12 +35,12 @@ namespace ClassLibrary4.NewFolder2Test
 
         public void TestPVMskaiciuoklePage()
         {
-            PVMskaiciuoklePage page = new PVMskaiciuoklePage(_driver);
+            PVMskaiciuoklePage _page = new PVMskaiciuoklePage(driver);
 
             string skaicius = "5";
-            page.PvmTarifas5(skaicius);            
+            _page.PvmTarifas5(skaicius);            
             string amount_wo_vat = "500";            
-            page.SumabePVM("500");
+            _page.SumabePVM("500");
 
 
 

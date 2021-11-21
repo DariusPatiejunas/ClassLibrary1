@@ -17,7 +17,7 @@ namespace ClassLibrary4.NewFolder1Page
 
         public void CloseBrowser()
         {
-           // Driver.Quit();
+           Driver.Quit();
         }
         
     }

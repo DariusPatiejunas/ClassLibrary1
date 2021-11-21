@@ -13,12 +13,12 @@ namespace ClassLibrary4.NewFolder1Page
     {
         private static IWebDriver _driver;
 
-        private IWebElement _userInput => _driver.FindElement(By.Id("user_login"));        
-        private IWebElement _emailInput => _driver.FindElement(By.Id("user_email"));        
-        private IWebElement _passwordInput => _driver.FindElement(By.Id("user_password"));        
-        private IWebElement _du_plius_duInput => _driver.FindElement(By.Id("du_plius_du"));                  
+        private IWebElement _userInput => _driver.FindElement(By.Id("user_login"));
+        private IWebElement _emailInput => _driver.FindElement(By.Id("user_email"));
+        private IWebElement _passwordInput => _driver.FindElement(By.Id("user_password"));
+        private IWebElement _du_plius_duInput => _driver.FindElement(By.Id("du_plius_du"));
         private IWebElement _button => _driver.FindElement(By.Name("button"));
-        private IWebElement _result =>_driver.FindElement(By.Id("flash_message"));
+        private IWebElement _result => _driver.FindElement(By.Id("flash_message"));
 
         public RegistracijaPage(IWebDriver webdriver)
         {
@@ -39,13 +39,13 @@ namespace ClassLibrary4.NewFolder1Page
         public void DuPliusDuInput(string text)
         {
             _du_plius_duInput.SendKeys(text);
-        }                                
+        }
         public void ClickButton()
         {
             _button.Click();
         }
         public void Result(string expectedResult)
-        {
+        { 
            Assert.AreEqual(expectedResult, _result.Text, " Klaidingas saugos kodas ");
         }
     }

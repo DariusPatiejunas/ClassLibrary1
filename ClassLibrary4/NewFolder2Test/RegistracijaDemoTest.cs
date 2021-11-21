@@ -12,43 +12,44 @@ namespace ClassLibrary4.NewFolder2Test
 {
     public class RegistracijaDemoTest : BaseTest
     {
-        private static RegistracijaDemoPage _page;
-        private object page;
-        private object _emailInput;
+        public static RegistracijaDemoPage _page;
+        public object page;
+        public object _emailInput;
+        public object user;
+        private string user_password;
 
         [OneTimeSetUp]
-        public  void SetUp()
-        {     
-            IWebDriver driver = new ChromeDriver();           
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);            
+        public void SetUp()
+        {
+            IWebDriver driver = new ChromeDriver();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             driver.Manage().Window.Maximize();
             _page = new RegistracijaDemoPage(driver);
         }
 
         [OneTimeTearDown]
-        public  void TearDown()
+        public void TearDown()
         {
             _page.CloseBrowser();
         }
-        
-        [Test]
-        public void TestUserInput()
-        {
-            
-            _page.UserInput();
-                      
-        }
-        [Test]
-        public void TestEmailInput()
-        {
-            _page.EmailInput();
-           
-        }
-        [Test]
-        public void PasswordInput()
-        {
-            _page.PasswordInput();
-        }
 
+        [Test]
+        public void TestUserInput(string user_login)
+        {
+            _page.UserInput(user_login);
+
+        }
+        [Test]
+        public void TestEmailInput(string email_Input)
+        {
+            _page.EmailInput(email_Input);
+
+        }
+        [Test]
+        public void PasswordInput(string password_Input)
+        {
+            _page.PasswordInput(password_Input);
+
+        }
     }
 }

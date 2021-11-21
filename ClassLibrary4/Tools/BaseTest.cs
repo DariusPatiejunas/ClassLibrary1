@@ -1,4 +1,5 @@
-﻿using ClassLibrary4.NewFolderPage1;
+﻿using ClassLibrary4.NewFolder1Page;
+using ClassLibrary4.NewFolderPage1;
 using ClassLibrary4.Tools;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
@@ -15,17 +16,15 @@ namespace ClassLibrary4.Tools
     public class BaseTest
     {
         public static IWebDriver driver;
-        public static TaxPage _taxPage;
+        public static RegistracijaPage _RegistracijaPage;
 
         public static object CustomDriver { get; private set; }
 
         [OneTimeSetUp]
 
-        public static void SetUp()
-        {
-           // driver = CustomDriver.GetChromeDriver();
-            _taxPage = new TaxPage(driver);
-        }
+        public static void SetUp() =>
+            // driver = CustomDriver.GetChromeDriver();
+            _RegistracijaPage = new RegistracijaPage(driver);
         [TearDown]
 
         public static void TakeScreenshot()
